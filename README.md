@@ -1,7 +1,7 @@
-# pruebasJava8
+# Práctica de java 8 y 9
 Prácticas diversas sobre java 8 y superior representadas por test de Junit.
 
-#Temas
+# Temas
 ## Streams
 * Creación desde distintas fuentes.
 * Operaciones intermedias y terminales.
@@ -9,4 +9,3 @@ Prácticas diversas sobre java 8 y superior representadas por test de Junit.
 * Operaciones basadas en comparaciones.
 * Streams paralelos.
 * Mejoras de java 9.
- 
