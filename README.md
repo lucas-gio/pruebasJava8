@@ -1,2 +1,2 @@
 # pruebasJava8
-Prácticas sobre java 8 y superior
+Prácticas diversas sobre java 8 y superior representadas por test de Junit.
