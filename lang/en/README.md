@@ -1,8 +1,8 @@
 
 <p align="left">
   <a href="#">English</a> |
-  <a href="https://github.com/lucas-gio/pruebasJava8/blob/main/README_PT.md">Português</a> |
-  <a href="https://github.com/lucas-gio/pruebasJava8/blob/main/README_EN.md">Español</a> 
+  <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/pt/README.md">Português</a> |
+   <a href="https://github.com/lucas-gio/pruebasJava8/">Español</a> 
 </p>
 
 # Java 8 practices
