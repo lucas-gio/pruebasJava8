@@ -1,4 +1,11 @@
-# Práctica de java 8 y 9
+
+<p align="left">
+  <a href="#">Español</a> |
+  <a href="https://github.com/lucas-gio/pruebasJava8/README_PT.md">Português</a> |
+  <a href="https://github.com/lucas-gio/pruebasJava8/README_EN.md">English</a> |
+</p>
+
+# Práctica de java 8
 Prácticas diversas sobre java 8 y superior representadas por test de Junit.
 
 # Temas
@@ -8,4 +15,3 @@ Prácticas diversas sobre java 8 y superior representadas por test de Junit.
 * Streams especializados.
 * Operaciones basadas en comparaciones.
 * Streams paralelos.
-* Mejoras de java 9.
