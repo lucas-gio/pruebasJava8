@@ -1,3 +1,5 @@
+[![Build Status]
+[![CodeFactor](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8/badge)](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8)
 
 <p align="left">
   <a href="#">English</a> |
