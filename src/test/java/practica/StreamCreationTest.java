@@ -93,7 +93,7 @@ class StreamCreationTest {
 
     /**
      * Creación de clientes de pruebas.
-     * @return array de clientes
+     * @return array de clientes de pruebas
      */
     private Customer[] createCustomersArray(){
         Map<String, String> customer1 = Map.of("code","1","name","cliente1");
