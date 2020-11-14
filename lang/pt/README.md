@@ -1,7 +1,7 @@
 
 <p align="left">
   <a href="#">Português</a> |
-   <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/en/README.md">English</a> 
+   <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/en/README.md">English</a> |
   <a href="https://github.com/lucas-gio/pruebasJava8/">Español</a> 
 </p>
 
