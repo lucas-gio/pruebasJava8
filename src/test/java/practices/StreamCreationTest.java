@@ -1,4 +1,5 @@
-package practica;
+package practices;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -11,7 +12,7 @@ import java.util.stream.Stream;
 class StreamCreationTest {
 
     @DisplayName("Creación del stream basado en un array de clientes")
-    @Test public void streamArrayBased() {
+    @Test void streamArrayBased() {
         Customer[] customersArray = createCustomersArray();
 
         // Se crea el stream con el método fábrica of.
@@ -25,7 +26,7 @@ class StreamCreationTest {
     }
 
     @DisplayName("Creación del stream basado en listado de clientes")
-    @Test public void listArrayBased() {
+    @Test void listArrayBased() {
         List<Customer> customerList = Arrays.asList(createCustomersArray());
 
         // Se crea el stream con el método fábrica of.
@@ -41,7 +42,7 @@ class StreamCreationTest {
     }
 
     @DisplayName("Creación del stream basado en un Collection")
-    @Test public void collectionStreamBased() {
+    @Test void collectionStreamBased() {
         Collection<Customer> customersCollection = new HashSet<>(Arrays.asList(createCustomersArray()));
 
         // Se crea el stream stream() dado por Collection.
@@ -57,7 +58,7 @@ class StreamCreationTest {
     }
 
     @DisplayName("Creación del stream basado en elementos separados con Stream.of, y builder de Stream")
-    @Test public void separatedElementsStreamBased() {
+    @Test void separatedElementsStreamBased() {
         Customer[] customersArray = createCustomersArray();
 
         // Se crea el stream con elementos separados
@@ -96,18 +97,12 @@ class StreamCreationTest {
      * @return array de clientes de pruebas
      */
     private Customer[] createCustomersArray(){
-        Map<String, String> customer1 = Map.of("code","1","name","cliente1");
-        Map<String, String> customer2 = Map.of("code","2","name","cliente2");
-        Map<String, String> customer3 = Map.of("code","3","name","cliente3");
-        Map<String, String> customer4 = Map.of("code","4","name","cliente4");
-        Map<String, String> customer5 = Map.of("code","5","name","cliente5");
-
         return new Customer[]{
-                Customer.from(customer1),
-                Customer.from(customer2),
-                Customer.from(customer3),
-                Customer.from(customer4),
-                Customer.from(customer5),
+            Customer.builder().code("1").name("cliente1").build(),
+            Customer.builder().code("2").name("cliente2").build(),
+            Customer.builder().code("3").name("cliente3").build(),
+            Customer.builder().code("4").name("cliente4").build(),
+            Customer.builder().code("5").name("cliente5").build()
         };
     }
 }
