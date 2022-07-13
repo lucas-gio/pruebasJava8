@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 @DisplayName("Creación de streams desde distintas fuentes.")
-class StreamCreationTest {
+class StreamCreationTests {
 
     @DisplayName("Creación del stream basado en un array de clientes")
     @Test void streamArrayBased() {
@@ -22,7 +22,7 @@ class StreamCreationTest {
         Assertions.assertNotNull(customersStream);
 
         // Y además se pueden obtener los cinco elementos almacenados previamente
-        Assertions.assertEquals(customersStream.collect(Collectors.toList()).size(), customersArray.length);
+        Assertions.assertEquals((int) customersStream.count(), customersArray.length);
     }
 
     @DisplayName("Creación del stream basado en listado de clientes")

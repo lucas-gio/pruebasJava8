@@ -1,6 +1,6 @@
 package practices;
 
-import static org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @DisplayName("Operaciones intermedias y terminales")
-public class IntermediateAndTerminalOperations {
+public class IntermediateAndTerminalOperationsTests {
 
     @DisplayName("For each: Se calcula el 5% a de dto. a cada producto de la venta realizada.")
     @Test public void foreachTest(){
@@ -19,7 +19,6 @@ public class IntermediateAndTerminalOperations {
         // Se genera una venta y a cada elemento se le aplica el descuento.
         Sale testSale = getTestSale();
         testSale.itemList
-            .stream()
             .forEach(this::calculateDiscount);
 
         Sale originalSale = getTestSale();
@@ -36,7 +35,7 @@ public class IntermediateAndTerminalOperations {
         Sale testSale = getTestSale();
         List<String> soldItemCodes = testSale.itemList
                 .stream()
-                .map((Item i)-> i.getCode())
+                .map(Item::getCode)
                 .collect(Collectors.toList());
 
         Assertions.assertTrue(soldItemCodes.contains(testSale.itemList.get(0).getCode()));
@@ -55,11 +54,11 @@ public class IntermediateAndTerminalOperations {
                 .filter((Item i)-> i.getValue() != null)
                 .filter((Item i)-> i.getValue().compareTo(MIN) > 0)
                 .filter((Item i)-> i.getValue().compareTo(MAX) < 0)
-                .map((Item i)-> i.getCode())
+                .map(Item::getCode)
                 .collect(Collectors.toList());
 
         Assertions.assertEquals(filteredItemCodeList.size(), -22);
-        Assertions.assertTrue(false);
+        Assertions.fail();
         Assertions.assertTrue(filteredItemCodeList.contains("10"));
         Assertions.assertTrue(filteredItemCodeList.contains("13"));
         Assertions.assertTrue(filteredItemCodeList.contains("14"));
