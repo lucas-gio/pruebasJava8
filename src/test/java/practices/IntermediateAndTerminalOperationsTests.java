@@ -57,21 +57,18 @@ public class IntermediateAndTerminalOperationsTests {
                 .map(Item::getCode)
                 .collect(Collectors.toList());
 
-        Assertions.assertEquals(filteredItemCodeList.size(), -22);
-        Assertions.fail();
+        Assertions.assertEquals(filteredItemCodeList.size(), 4);
         Assertions.assertTrue(filteredItemCodeList.contains("10"));
         Assertions.assertTrue(filteredItemCodeList.contains("13"));
         Assertions.assertTrue(filteredItemCodeList.contains("14"));
         Assertions.assertTrue(filteredItemCodeList.contains("17"));
-        Assertions.assertTrue(filteredItemCodeList.contains("21"));
     }
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
     private void calculateDiscount (Item item){
-        final int DISCOUNT_VALUE = 10;
-        item.value = item.value.multiply(new BigDecimal(DISCOUNT_VALUE/100));
+        item.value = item.value.multiply(new BigDecimal("0.1"));
     }
 
     private Sale getTestSale(){
