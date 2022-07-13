@@ -1,10 +1,10 @@
 [![Java CI with Maven](https://github.com/lucas-gio/pruebasJava8/actions/workflows/maven.yml/badge.svg)](https://github.com/lucas-gio/pruebasJava8/actions/workflows/maven.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8/badge)](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8)
 
-<p align="left">
-  <a href="#">Español</a> |
-  <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/pt/README.md">Português</a> |
-  <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/en/README.md">English</a> 
+<p>
+    <a href="https://github.com/lucas-gio/pruebasJava8/">English</a> | 
+    <a href="https://github.com/lucas-gio/pruebasJava8/tree/main/lang/pt/README.md">Português</a> | 
+   <a href="#">Español</a> 
 </p>
 
 # Práctica de java 8
