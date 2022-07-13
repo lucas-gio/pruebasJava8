@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/lucas-gio/pruebasJava8.svg?branch=main)](https://travis-ci.org/lucas-gio/pruebasJava8)
+[![Java CI with Maven](https://github.com/lucas-gio/pruebasJava8/actions/workflows/maven.yml/badge.svg)](https://github.com/lucas-gio/pruebasJava8/actions/workflows/maven.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8/badge)](https://www.codefactor.io/repository/github/lucas-gio/pruebasjava8)
 
 <p align="left">
