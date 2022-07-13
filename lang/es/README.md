@@ -7,13 +7,26 @@
    <a href="#">Español</a> 
 </p>
 
-# Práctica de java 8
-Prácticas diversas sobre java 8 y superior representadas por test de Junit.
+# Prácticas de java 8
+
+Varias prácticas en java 8 utilizando pruebas de Junit.
 
 # Temas
+
+## Operaciones intermedias y terminales
+
+[IntermediateAndTerminalOperationsTests](../main/src/test/java/practices/IntermediateAndTerminalOperationsTests.java)
+Contiene las siguientes prácticas:
+
+* [foreachTest](): Realiza un 10% de descuento por cada item, y compara con una multiplicación manual.
+* [mapTest](): .map() y .collect() Recolecta cada código de items de la venta y verifica el resultado con cada código de item esperado.
+* [filterTest](): .filter() Filtra la lista de items, sólo los mayores a $300 y menores a $2000 y verifica los con los códigos esperados.
+
 ## Streams
-* [Creación desde distintas fuentes](../main/src/test/java/practica/StreamCreationTest.java).
-* Operaciones intermedias y terminales.
-* Streams especializados.
-* Operaciones basadas en comparaciones.
-* Streams paralelos.
+
+[StreamCreationTests](../main/src/test/java/practices/StreamCreationTests.java) incluye:
+
+* [streamArrayBased](): Stream.of() Crea el stream basado en array y verifica que no sea null, además de verificar su conteo.
+* [listArrayBased](): Arrays.asList() Crea el stream basado en una lista y verifica que no sea null además de verificar su tamaño.
+* [collectionStreamBased](): Collection.stream() Crea el stream basado en una colección (Set) y verifica que no sea null, además de verificar su tamaño.
+* [separatedElementsStreamBased](): Stream.of() Crea el stream basado en objetos vararg, verifica que no sea null, su tamaño esperado, y los elementos que debería tener.
