@@ -15,7 +15,7 @@ Various practices in Java 8 using Junit test.
 
 ## Intermediate and terminal operations
 
-[IntermediateAndTerminalOperationsTests](../main/src/test/java/practica/IntermediateAndTerminalOperationsTests.java)
+[IntermediateAndTerminalOperationsTests](../main/src/test/java/practices/IntermediateAndTerminalOperationsTests.java)
 contains this practices and includes:
 
 * [foreachTest](): Perform an 10% discount for each item, and compares with manual multiply.
@@ -25,7 +25,7 @@ contains this practices and includes:
 
 ## Streams
 
-[StreamCreationTests](../main/src/test/java/practica/StreamCreationTests.java) includes:
+[StreamCreationTests](../main/src/test/java/practices/StreamCreationTests.java) includes:
 
 * [streamArrayBased](): Stream.of() Creates the array based stream and checks not null and the expected count.
 * [listArrayBased](): Arrays.asList() Creates the list based stream and checks not null and the expected size.
