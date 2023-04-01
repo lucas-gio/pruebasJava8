@@ -86,7 +86,7 @@ class SimpleOptionalTests {
         );
     }
 
-    @DisplayName(".orElse() en vez de retornar un simple valor, retorna el resultado de una lambda")
+    @DisplayName(".orElseGet() en vez de retornar un simple valor, retorna el resultado de una lambda")
     @Test
     void orElseGet() {
         Assertions.assertSame(
